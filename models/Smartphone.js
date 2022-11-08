@@ -1,20 +1,21 @@
 const { model, Schema } = require('mongoose');
 
 const smartphoneSchema = new Schema({
-  id: String,
   manufacturer: {
-    id: {
-      type: Schema.Types.String,
+    _id: {
+      type: Schema.Types.ObjectId,
       ref: 'Manufacturer'
     },
+    ISIN: String,
     shortName: String
   },
   model: String,
   cpu: {
-    id: {
-      type: Schema.Types.String,
-      ref: 'Manufacturer'
+    _id: {
+      type: Schema.Types.ObjectId,
+      ref: 'Cpu'
     },
+    refCode: String,
     model: String
   },
   ram: String,

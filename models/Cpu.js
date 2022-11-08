@@ -1,14 +1,15 @@
 const { model, Schema } = require('mongoose');
 
 const cpuSchema = new Schema({
-  id: String,
   manufacturer: {
-    id: {
-      type: Schema.Types.String,
+    _id: {
+      type: Schema.Types.ObjectId,
       ref: 'Manufacturer'
     },
+    ISIN: String,
     shortName: String
   },
+  refCode: String,
   model: String,
   socket: String,
   cores: String,

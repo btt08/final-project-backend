@@ -1,12 +1,12 @@
 const { model, Schema } = require('mongoose');
 
 const gpuSchema = new Schema({
-  id: String,
   manufacturer: {
-    id: {
-      type: Schema.Types.String,
+    _id: {
+      type: Schema.Types.ObjectId,
       ref: 'Manufacturer'
     },
+    ISIN: String,
     shortName: String
   },
   aib: String,

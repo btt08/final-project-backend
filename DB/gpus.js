@@ -1,6 +1,5 @@
 const gpus = [
   {
-    'id': '_NA1080TI',
     'manufacturer': 'US67066G1040',
     'aib': 'ASUS',
     'model': 'ROG STRIX 1080 TI OC',
@@ -10,7 +9,6 @@ const gpus = [
     'price': 700
   },
   {
-    'id': '_NE3060TI',
     'manufacturer': 'US67066G1040',
     'aib': 'EVGA',
     'model': '3060 TI FTW3',
@@ -20,7 +18,6 @@ const gpus = [
     'price': 540
   },
   {
-    'id': '_NA3080TI',
     'manufacturer': 'US67066G1040',
     'aib': 'ASUS',
     'model': 'ROG STRIX 3080 TI',
@@ -30,7 +27,6 @@ const gpus = [
     'price': 1300
   },
   {
-    'id': '_AS5700XT',
     'manufacturer': 'US0079031078',
     'aib': 'SAPPHIRE',
     'model': 'NITRO+ 5700 XT',
@@ -40,7 +36,6 @@ const gpus = [
     'price': 650
   },
   {
-    'id': '_AS6800XT',
     'manufacturer': 'US0079031078',
     'aib': 'SAPPHIRE',
     'model': 'NITRO+ RX 6800 XT OC SE GAMING',
@@ -50,7 +45,6 @@ const gpus = [
     'price': 1000
   },
   {
-    'id': '_AG6600XT',
     'manufacturer': 'US0079031078',
     'aib': 'GIGABYTE',
     'model': 'RX 6600 XT GAMING OC PRO',
@@ -60,7 +54,6 @@ const gpus = [
     'price': 585
   },
   {
-    'id': '_IARCA770',
     'manufacturer': 'US4581401001',
     'aib': 'INTEL',
     'model': 'ARC A770',

@@ -1,7 +1,7 @@
 const { model, Schema } = require('mongoose');
 
 const manufacturerSchema = new Schema({
-  id: String,
+  ISIN: Schema.Types.String,
   shortName: String,
   fullName: String,
   country: String,

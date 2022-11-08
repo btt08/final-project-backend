@@ -1,6 +1,6 @@
 const manufacturers = [
   {
-    'id': 'US02079K3059',
+    'ISIN': 'US02079K3059',
     'shortName': 'GOOGLE',
     'fullName': 'ALPHABET INC',
     'country': 'USA',
@@ -8,7 +8,7 @@ const manufacturers = [
     'website': 'https://abc.xyz/'
   },
   {
-    'id': 'US4581401001',
+    'ISIN': 'US4581401001',
     'shortName': 'INTEL',
     'fullName': 'INTEL CORPORATION',
     'country': 'USA',
@@ -16,7 +16,7 @@ const manufacturers = [
     'website': 'https://www.intel.com'
   },
   {
-    'id': 'US67066G1040',
+    'ISIN': 'US67066G1040',
     'shortName': 'NVIDIA',
     'fullName': 'NVIDIA CORPORATION',
     'country': 'USA',
@@ -24,7 +24,7 @@ const manufacturers = [
     'website': 'http://www.nvidia.com/'
   },
   {
-    'id': 'US0079031078',
+    'ISIN': 'US0079031078',
     'shortName': 'AMD',
     'fullName': 'ADVANCED MICRO DEVICES INC',
     'country': 'USA',
@@ -32,7 +32,7 @@ const manufacturers = [
     'website': 'http://www.amd.com/'
   },
   {
-    'id': 'US7475251036',
+    'ISIN': 'US7475251036',
     'shortName': 'QUALCOMM',
     'fullName': 'QUALCOMM',
     'country': 'USA',
@@ -40,7 +40,7 @@ const manufacturers = [
     'website': 'https://www.qualcomm.com/'
   },
   {
-    'id': 'US0378331005',
+    'ISIN': 'US0378331005',
     'shortName': 'APPLE',
     'fullName': 'APPLE INC',
     'country': 'USA',
@@ -48,7 +48,7 @@ const manufacturers = [
     'website': 'http://www.apple.com/'
   },
   {
-    'id': 'TW0002357001',
+    'ISIN': 'TW0002357001',
     'shortName': 'ASUS',
     'fullName': 'ASUSTeK COMPUTER INC',
     'country': 'TAIWAN',
@@ -56,7 +56,7 @@ const manufacturers = [
     'website': 'http://www.asus.com/'
   },
   {
-    'id': 'TW0002376001',
+    'ISIN': 'TW0002376001',
     'shortName': 'GIGABYTE',
     'fullName': 'GIGABYTE TECHNOLOGY',
     'country': 'TAIWAN',
@@ -64,7 +64,7 @@ const manufacturers = [
     'website': 'http://www.gigabyte.com.tw/'
   },
   {
-    'id': 'KR7123260002',
+    'ISIN': 'KR7123260002',
     'shortName': 'SAPPHIRE',
     'fullName': 'SAPPHIRE TECHNOLOGY',
     'country': 'HONG KONG',
@@ -72,7 +72,7 @@ const manufacturers = [
     'website': 'http://www.sapphiretech.com/'
   },
   {
-    'id': 'US6200763075',
+    'ISIN': 'US6200763075',
     'shortName': 'MOTOROLA',
     'fullName': 'MOTOROLA SOLUTIONS INC',
     'country': 'USA',

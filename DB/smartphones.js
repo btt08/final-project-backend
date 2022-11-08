@@ -1,6 +1,5 @@
 const smartphones = [
   {
-    'id': '_MOTOE30F',
     'manufacturer': 'US6200763075',
     'model': 'E30 FUSION',
     'cpu': '_S888+5G',
@@ -12,7 +11,6 @@ const smartphones = [
     'price': 599
   },
   {
-    'id': '_GPIXEL7P',
     'manufacturer': 'US02079K3059',
     'model': 'PIXEL 7 PRO',
     'cpu': '_GTENSORG2',
@@ -24,7 +22,6 @@ const smartphones = [
     'price': 899
   },
   {
-    'id': '_GPIXEL7',
     'manufacturer': 'US02079K3059',
     'model': 'PIXEL 7',
     'cpu': '_GTENSORG2',
@@ -36,7 +33,6 @@ const smartphones = [
     'price': 599
   },
   {
-    'id': '_AIPHONE13',
     'manufacturer': 'US0378331005',
     'model': 'IPHONE 13',
     'cpu': '_AA15BIONIC',

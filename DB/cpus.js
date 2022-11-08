@@ -1,6 +1,6 @@
 const cpus = [
   {
-    'id': '_I8700K',
+    'refCode': '_I8700K',
     'manufacturer': 'US4581401001',
     'model': 'Core i7 8700K',
     'socket': 'LGA1151',
@@ -11,7 +11,7 @@ const cpus = [
     'price': 359
   },
   {
-    'id': '_I11900K',
+    'refCode': '_I11900K',
     'manufacturer': 'US4581401001',
     'model': 'Core i9 11900K',
     'socket': 'LGA1700',
@@ -22,7 +22,7 @@ const cpus = [
     'price': 400
   },
   {
-    'id': '_I11700T',
+    'refCode': '_I11700T',
     'manufacturer': 'US4581401001',
     'model': 'Core i7 11700T',
     'socket': 'LGS1200',
@@ -33,7 +33,7 @@ const cpus = [
     'price': 355
   },
   {
-    'id': '_A5600G',
+    'refCode': '_A5600G',
     'manufacturer': 'US0079031078',
     'model': 'Ryzen 5 5600G',
     'socket': 'AM4',
@@ -44,7 +44,7 @@ const cpus = [
     'price': 225
   },
   {
-    'id': '_A5950X',
+    'refCode': '_A5950X',
     'manufacturer': 'US0079031078',
     'model': 'Ryzen 9 5950X',
     'socket': 'AM4',
@@ -55,7 +55,7 @@ const cpus = [
     'price': 650
   },
   {
-    'id': '_A5900HS',
+    'refCode': '_A5900HS',
     'manufacturer': 'US0079031078',
     'model': 'Ryzen 9 5900HS',
     'socket': 'FP6',
@@ -66,7 +66,7 @@ const cpus = [
     'price': null
   },
   {
-    'id': '_S888+5G',
+    'refCode': '_S888+5G',
     'manufacturer': 'US7475251036',
     'model': 'SNAPDRAGON 888+5G',
     'socket': 'mobile',
@@ -77,7 +77,7 @@ const cpus = [
     'price': null
   },
   {
-    'id': '_GTENSORG2',
+    'refCode': '_GTENSORG2',
     'manufacturer': 'US02079K3059',
     'model': 'TENSOR G2 ',
     'socket': 'mobile',
@@ -88,7 +88,7 @@ const cpus = [
     'price': null
   },
   {
-    'id': '_AA15BIONIC',
+    'refCode': '_AA15BIONIC',
     'manufacturer': 'US0378331005',
     'model': 'A15 BIONIC',
     'socket': 'mobile',

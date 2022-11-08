@@ -15,36 +15,44 @@ const createdb = async (request, response) => {
   await Manufacturer.deleteMany({});
 
   const newManufacturers = await Manufacturer.insertMany(manufacturers);
+  console.log('MANUFACTURERS ADDED')
+
   const newCpus = cpus.map(cpu => {
-    const manufacturer = newManufacturers.filter((manufacturer) => manufacturer.id === cpu.manufacturer)[0];
-    const { id, shortName } = manufacturer;
+    const manufacturer = newManufacturers.filter((manufacturer) => manufacturer.ISIN === cpu.manufacturer)[0];
+    const { ISIN, shortName } = manufacturer;
     return {
       ...cpu,
-      manufacturer: { id, shortName }
+      manufacturer: { ISIN, shortName }
     }
   });
   await Cpu.insertMany(newCpus);
 
+  console.log('CPUS ADDED')
+
+
   const newGpus = gpus.map(gpu => {
-    const manufacturer = newManufacturers.filter((manufacturer) => manufacturer.id === gpu.manufacturer)[0];
-    const { id, shortName } = manufacturer;
+    const manufacturer = newManufacturers.filter((manufacturer) => manufacturer.ISIN === gpu.manufacturer)[0];
+    const { ISIN, shortName } = manufacturer;
     return {
       ...gpu,
-      manufacturer: { id, shortName }
+      manufacturer: { ISIN, shortName }
     }
   });
   await Gpu.insertMany(newGpus);
 
+  console.log('GPUS ADDED')
+
   const newSmartphones = smartphones.map(smartphone => {
-    const manufa = newManufacturers.filter((manufacturer) => manufacturer.id === smartphone.manufacturer)[0];
-    const cpu = newCpus.filter((cpu) => cpu.id === smartphone.cpu)[0];
+    const manufa = newManufacturers.filter((manufacturer) => manufacturer.ISIN === smartphone.manufacturer)[0];
+    const cpu = newCpus.filter((cpu) => cpu.refCode === smartphone.cpu)[0];
     return {
       ...smartphone,
-      manufacturer: { id: manufa.id, shortName: manufa.shortName },
-      cpu: { id: cpu.id, model: cpu.model }
+      manufacturer: { ISIN: manufa.ISIN, shortName: manufa.shortName },
+      cpu: { refCode: cpu.refCode, model: cpu.model }
     }
   });
   await Smartphone.insertMany(newSmartphones);
+  console.log('SMARTPHONES ADDED')
 
   console.log('Sacabo')
 };
