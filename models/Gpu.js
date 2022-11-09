@@ -9,6 +9,7 @@ const gpuSchema = new Schema({
     ISIN: String,
     shortName: String
   },
+  refCode: String,
   aib: String,
   model: String,
   ram: String,

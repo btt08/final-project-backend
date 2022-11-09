@@ -1,14 +1,32 @@
 const Cpu = require('../models/Cpu');
 
-const getAllCpus = async () => {
-  return await Cpu.find().exec();
+const options = {
+  projectin: { _id: 0, __v: 0 },
+  limit: 3,
+  customLabels: { docs: 'results' }
+};
+
+const getAllCpus = async (page = 1) => {
+  let result;
+  try {
+    result = await Cpu.paginate({}, { ...options, page });
+    console.log(result)
+  } catch (error) {
+    console.log(error);
+  }
+  return result;
 }
 
-const getCpu = async (refCode) => {
+const getCpu = async (refCode, page = 1) => {
+  let result;
   const filter = {
     refCode: new RegExp(refCode, 'i')
   }
-  const result = await Cpu.find(filter).exec();
+  try {
+    result = await Cpu.paginate(filter, { ...options, page });
+  } catch (error) {
+    console.log(error);
+  }
   return result;
 };
 

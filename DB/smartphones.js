@@ -1,6 +1,7 @@
 const smartphones = [
   {
     'manufacturer': 'US6200763075',
+    'refCode': '_MOTOE30F',
     'model': 'E30 FUSION',
     'cpu': '_S888+5G',
     'ram': '8GB',
@@ -12,6 +13,7 @@ const smartphones = [
   },
   {
     'manufacturer': 'US02079K3059',
+    'refCode': '_GPIXEL7P',
     'model': 'PIXEL 7 PRO',
     'cpu': '_GTENSORG2',
     'ram': '12GB',
@@ -23,6 +25,7 @@ const smartphones = [
   },
   {
     'manufacturer': 'US02079K3059',
+    'refCode': '_GPIXEL7',
     'model': 'PIXEL 7',
     'cpu': '_GTENSORG2',
     'ram': '8GB',
@@ -34,6 +37,7 @@ const smartphones = [
   },
   {
     'manufacturer': 'US0378331005',
+    'refCode': '_AIPHONE13',
     'model': 'IPHONE 13',
     'cpu': '_AA15BIONIC',
     'ram': '4GB',

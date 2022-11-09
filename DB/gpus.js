@@ -1,5 +1,6 @@
 const gpus = [
   {
+    'refCode': '_NA1080TIOC',
     'manufacturer': 'US67066G1040',
     'aib': 'ASUS',
     'model': 'ROG STRIX 1080 TI OC',
@@ -9,6 +10,7 @@ const gpus = [
     'price': 700
   },
   {
+    'refCode': '_NE3060TIFTW3',
     'manufacturer': 'US67066G1040',
     'aib': 'EVGA',
     'model': '3060 TI FTW3',
@@ -18,6 +20,7 @@ const gpus = [
     'price': 540
   },
   {
+    'refCode': '_NA3060TI',
     'manufacturer': 'US67066G1040',
     'aib': 'ASUS',
     'model': 'ROG STRIX 3080 TI',
@@ -27,6 +30,7 @@ const gpus = [
     'price': 1300
   },
   {
+    'refCode': '_AS5700XT',
     'manufacturer': 'US0079031078',
     'aib': 'SAPPHIRE',
     'model': 'NITRO+ 5700 XT',
@@ -36,15 +40,17 @@ const gpus = [
     'price': 650
   },
   {
+    'refCode': '_AS6800XTOC',
     'manufacturer': 'US0079031078',
     'aib': 'SAPPHIRE',
-    'model': 'NITRO+ RX 6800 XT OC SE GAMING',
+    'model': 'NITRO+ RX 6800 XT OC',
     'ram': '16GB',
     'ramType': 'GDDR6',
     'power': '300W',
     'price': 1000
   },
   {
+    'refCode': '_AG6600XTGOCP',
     'manufacturer': 'US0079031078',
     'aib': 'GIGABYTE',
     'model': 'RX 6600 XT GAMING OC PRO',
@@ -54,6 +60,7 @@ const gpus = [
     'price': 585
   },
   {
+    'refCode': '_IA770',
     'manufacturer': 'US4581401001',
     'aib': 'INTEL',
     'model': 'ARC A770',

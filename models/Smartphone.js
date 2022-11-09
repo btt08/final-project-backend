@@ -9,6 +9,7 @@ const smartphoneSchema = new Schema({
     ISIN: String,
     shortName: String
   },
+  refCode: String,
   model: String,
   cpu: {
     _id: {

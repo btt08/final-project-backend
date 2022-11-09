@@ -17,8 +17,8 @@ app.use(cors());
 // app.use(express.static('public'));
 
 app.use('/cpus', cpusRouter);
-// app.use('/gpus', gpusRouter);
-// app.use('/smartphones', smartphonesRouter);
+app.use('/gpus', gpusRouter);
+app.use('/smartphones', smartphonesRouter);
 app.use('/manufacturers', manufacturersRouter);
 
 app.listen(port, hostName, () => {

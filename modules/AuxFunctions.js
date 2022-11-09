@@ -1,6 +1,6 @@
 const checkResultLength = (result, res) => {
-  result.length > 0
-    ? res.json({ result }).status(200).end()
+  result.results.length > 0
+    ? res.json(result).status(200).end()
     : res.json({ error: 'No existen resultados' }).status(404).end();
 }
 

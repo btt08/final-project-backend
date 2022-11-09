@@ -1,4 +1,5 @@
 const { model, Schema } = require('mongoose');
+const paginate = require('mongoose-paginate-v2');
 
 const cpuSchema = new Schema({
   manufacturer: {
@@ -19,6 +20,7 @@ const cpuSchema = new Schema({
   price: Number,
 });
 
+cpuSchema.plugin(paginate);
 const Cpu = model('Cpu', cpuSchema);
 
 module.exports = Cpu;

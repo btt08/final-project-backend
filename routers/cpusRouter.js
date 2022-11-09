@@ -13,7 +13,7 @@ router.get('/:refCode', async (req, res, next) => {
 
 router.get('/', async (req, res, next) => {
   try {
-    const result = await getAllCpus();
+    const result = await getAllCpus(req.query.page);
     checkResultLength(result, res);
   } catch (err) {
     next(err);
