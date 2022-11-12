@@ -11,9 +11,9 @@ router.get('/', async (req, res, next) => {
   }
 });
 
-router.get('/:ISIN', async (res, req, next) => {
+router.get('/:isin', async (req, res, next) => {
   try {
-    const result = await getManufacturer(req.params.ISIN);
+    const result = await getManufacturer(req.params.isin);
     checkResultLength(result, res);
   } catch (error) {
     console.log(error);

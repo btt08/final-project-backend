@@ -3,7 +3,10 @@ const Manufacturer = require('../models/Manufacturer.js');
 const getAllManufacturers = async () => {
   let result;
   try {
-    result = await Manufacturer.find({}, { _id: 0, __v: 0 }).exec();
+    result = await Manufacturer.paginate({}, {
+      projection: { _id: 0, __v: 0 },
+      customLabels: { docs: 'results' }
+    });
   } catch (error) {
     console.log(error);
   }
@@ -13,10 +16,13 @@ const getAllManufacturers = async () => {
 const getManufacturer = async (ISIN) => {
   let result;
   const filter = {
-    ISIN: new RegExp(ISIN, 'i')
+    'ISIN': new RegExp(ISIN, 'i')
   }
   try {
-    result = await Manufacturer.find({ filter }, { _id: 0, __v: 0 }).exec();
+    result = await Manufacturer.paginate(filter, {
+      projection: { _id: 0, __v: 0 },
+      customLabels: { docs: 'results' }
+    });
   } catch (error) {
     console.log(error);
   }

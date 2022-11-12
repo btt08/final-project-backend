@@ -4,6 +4,20 @@ const checkResultLength = (result, res) => {
     : res.json({ error: 'No existen resultados' }).status(404).end();
 }
 
+const getOptions = (page = 1) => {
+  return {
+    projection: { _id: 0, __v: 0, cat: 0 },
+    populate: {
+      path: 'brand',
+      select: { _id: 0, __v: 0 }
+    },
+    limit: 10,
+    page,
+    customLabels: { docs: 'results' }
+  };
+}
+
 module.exports = {
-  checkResultLength
+  checkResultLength,
+  getOptions
 };

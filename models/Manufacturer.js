@@ -1,7 +1,8 @@
-const { model, Schema } = require('mongoose');
+const { model, Schema, SchemaType } = require('mongoose');
+const paginate = require('mongoose-paginate-v2');
 
 const manufacturerSchema = new Schema({
-  ISIN: Schema.Types.String,
+  ISIN: String,
   shortName: String,
   fullName: String,
   country: String,
@@ -9,6 +10,7 @@ const manufacturerSchema = new Schema({
   website: String
 });
 
+manufacturerSchema.plugin(paginate);
 const Manufacturer = model('Manufacturer', manufacturerSchema);
 
 module.exports = Manufacturer;

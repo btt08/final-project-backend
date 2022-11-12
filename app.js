@@ -1,8 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-const cpusRouter = require('./routers/cpusRouter')
-const gpusRouter = require('./routers/gpusRouter')
-const smartphonesRouter = require('./routers/smartphonesRouter')
+const productsRouter = require('./routers/productsRouter')
 const manufacturersRouter = require('./routers/manufacturersRouter')
 
 const config = require('./modules/config');
@@ -16,9 +14,7 @@ app.use(cors());
 
 // app.use(express.static('public'));
 
-app.use('/cpus', cpusRouter);
-app.use('/gpus', gpusRouter);
-app.use('/smartphones', smartphonesRouter);
+app.use('/products', productsRouter);
 app.use('/manufacturers', manufacturersRouter);
 
 app.listen(port, hostName, () => {
