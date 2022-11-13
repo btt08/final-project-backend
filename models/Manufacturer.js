@@ -1,4 +1,4 @@
-const { model, Schema, SchemaType } = require('mongoose');
+const { model, Schema } = require('mongoose');
 const paginate = require('mongoose-paginate-v2');
 
 const manufacturerSchema = new Schema({

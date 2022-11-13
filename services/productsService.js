@@ -1,54 +1,36 @@
 const Product = require('../models/Product');
 const { getOptions } = require('../modules/AuxFunctions')
 
-const getAllProducts = async (page = 1) => {
+const getAllProducts = async (page = 1, sort) => {
   let result;
   try {
-    result = await Product.paginate({}, getOptions(page));
+    result = await Product.paginate({}, getOptions(page, sort));
   } catch (error) {
     console.log(error);
   }
   return result;
 }
 
-const getProduct = async (refCode) => {
+const searchProduct = async (query, page = 1, sort) => {
   let result;
   const filter = {
-    refCode: new RegExp(refCode, 'i')
-  }
-  try {
-    result = await Product
-      .findOne(filter)
-      .select('-_id -__v')
-      .populate('brand', '-_id -__v')
-      .exec();
-  } catch (error) {
-    console.log(error);
-  }
-  console.log(result)
-  return { results: [result] };
-};
-
-const searchProduct = async (query, page = 1) => {
-  let result;
-  const filter = {
-    model: new RegExp(query, 'i')
+    model: new RegExp(query.replace(' ', '.*'), 'i')
   };
   try {
-    result = await Product.paginate(filter, getOptions());
+    result = await Product.paginate(filter, getOptions(page, sort));
   } catch (error) {
     console.log(error)
   }
   return result;
 }
 
-const getProductByCat = async (cat) => {
+const getProductByCat = async (cat, page = 1, sort) => {
   let result;
   const filter = {
     cat: new RegExp(cat, 'i')
   }
   try {
-    result = await Product.paginate(filter, getOptions());
+    result = await Product.paginate(filter, getOptions(page, sort));
   } catch (error) {
     console.log(error);
   }
@@ -57,7 +39,6 @@ const getProductByCat = async (cat) => {
 
 module.exports = {
   getAllProducts,
-  getProduct,
   getProductByCat,
   searchProduct
 };

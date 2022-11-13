@@ -100,7 +100,7 @@ const products = [
   {
     'refCode': '_AG6600XTGOCP',
     'manufacturer_id': 'TW0002376001',
-    'model': 'Gigabyte RX 6600 XT GAMING OC PRO',
+    'model': 'Gigabyte RX 6600 XT OC PRO',
     'cat': 'gpu',
     'price': 585
   },

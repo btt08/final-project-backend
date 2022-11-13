@@ -1,5 +1,6 @@
 const { model, Schema } = require('mongoose');
 const paginate = require('mongoose-paginate-v2');
+const Manufacturer = require('../models/Manufacturer.js');
 
 const productSchema = new Schema({
   manufacturer_id: String,
@@ -9,8 +10,6 @@ const productSchema = new Schema({
   price: Number
 }, {
   toObject: { virtuals: true },
-  // use if your results might be retrieved as JSON
-  // see http://stackoverflow.com/q/13133911/488666
   toJSON: { virtuals: true }
 });
 
@@ -18,7 +17,7 @@ productSchema.virtual('brand', {
   ref: 'Manufacturer',
   localField: 'manufacturer_id',
   foreignField: 'ISIN',
-  justOne: true // for many-to-1 relationships
+  justOne: true
 });
 
 productSchema.plugin(paginate);
