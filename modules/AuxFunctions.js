@@ -12,7 +12,7 @@ const getOptions = (page = 1, sort = [['model', 'asc']]) => {
       select: { _id: 0, __v: 0 }
     },
     sort: sort,
-    limit: 10,
+    limit: 8,
     page,
     customLabels: { docs: 'results' }
   };

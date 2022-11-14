@@ -49,9 +49,23 @@ const products = [
     'price': null
   },
   {
+    'refCode': '_S888',
+    'manufacturer_id': 'US7475251036',
+    'model': 'QUALCOMM SNAPDRAGON 888',
+    'cat': 'cpu',
+    'price': null
+  },
+  {
     'refCode': '_GTENSORG2',
     'manufacturer_id': 'US02079K3059',
     'model': 'Google TENSOR G2 ',
+    'cat': 'cpu',
+    'price': null
+  },
+  {
+    'refCode': '_GTENSOR',
+    'manufacturer_id': 'US02079K3059',
+    'model': 'Google TENSOR ',
     'cat': 'cpu',
     'price': null
   },
@@ -63,11 +77,32 @@ const products = [
     'price': null
   },
   {
+    'refCode': '_AA13BIONIC',
+    'manufacturer_id': 'US0378331005',
+    'model': 'Apple A13 BIONIC',
+    'cat': 'cpu',
+    'price': null
+  },
+  {
     'refCode': '_NA1080TIOC',
     'manufacturer_id': 'TW0002357001',
     'model': 'Asus ROG STRIX 1080 TI OC',
     'cat': 'gpu',
-    'price': 700
+    'price': 500
+  },
+  {
+    'refCode': '_NA2080TIOC',
+    'manufacturer_id': 'TW0002357001',
+    'model': 'Asus ROG STRIX 2080 TI OC',
+    'cat': 'gpu',
+    'price': 800
+  },
+  {
+    'refCode': '_NA3080TIOC',
+    'manufacturer_id': 'TW0002357001',
+    'model': 'Asus ROG STRIX 3080 TI OC',
+    'cat': 'gpu',
+    'price': 1200
   },
   {
     'refCode': '_NN3060',
@@ -77,11 +112,18 @@ const products = [
     'price': 540
   },
   {
+    'refCode': '_NN3070',
+    'manufacturer_id': 'US67066G1040',
+    'model': 'NVIDIA 3070 Reference',
+    'cat': 'gpu',
+    'price': 700
+  },
+  {
     'refCode': '_NA3060TI',
     'manufacturer_id': 'TW0002357001',
     'model': 'Asus ROG STRIX 3060 TI',
     'cat': 'gpu',
-    'price': 1300
+    'price': 900
   },
   {
     'refCode': '_AS5700XT',
@@ -91,6 +133,20 @@ const products = [
     'price': 650
   },
   {
+    'refCode': '_AS6700XT',
+    'manufacturer_id': 'KR7123260002',
+    'model': 'Sapphire NITRO+ 6700 XT',
+    'cat': 'gpu',
+    'price': 700
+  },
+  {
+    'refCode': '_AS6800OC',
+    'manufacturer_id': 'KR7123260002',
+    'model': 'Sapphire NITRO+ RX 6800 OC',
+    'cat': 'gpu',
+    'price': 800
+  },
+  {
     'refCode': '_AS6800XTOC',
     'manufacturer_id': 'KR7123260002',
     'model': 'Sapphire NITRO+ RX 6800 XT OC',
@@ -98,11 +154,25 @@ const products = [
     'price': 1000
   },
   {
+    'refCode': '_AG6500',
+    'manufacturer_id': 'TW0002376001',
+    'model': 'Gigabyte RX 6500',
+    'cat': 'gpu',
+    'price': 300
+  },
+  {
     'refCode': '_AG6600XTGOCP',
     'manufacturer_id': 'TW0002376001',
     'model': 'Gigabyte RX 6600 XT OC PRO',
     'cat': 'gpu',
-    'price': 585
+    'price': 500
+  },
+  {
+    'refCode': '_IA760',
+    'manufacturer_id': 'US4581401001',
+    'model': 'Intel Arc A760',
+    'cat': 'gpu',
+    'price': 250
   },
   {
     'refCode': '_IA770',
@@ -112,11 +182,25 @@ const products = [
     'price': 330
   },
   {
+    'refCode': '_MOTOE30N',
+    'manufacturer_id': 'US6200763075',
+    'model': 'Motorola E30 NEO',
+    'cat': 'smartphone',
+    'price': 399
+  },
+  {
     'refCode': '_MOTOE30F',
     'manufacturer_id': 'US6200763075',
     'model': 'Motorola E30 FUSION',
     'cat': 'smartphone',
     'price': 599
+  },
+  {
+    'refCode': '_MOTOE30U',
+    'manufacturer_id': 'US6200763075',
+    'model': 'Motorola E30 ULTRA',
+    'cat': 'smartphone',
+    'price': 899
   },
   {
     'refCode': '_GPIXEL7P',
@@ -136,6 +220,13 @@ const products = [
     'refCode': '_AIPHONE13',
     'manufacturer_id': 'US0378331005',
     'model': 'Apple IPHONE 13',
+    'cat': 'smartphone',
+    'price': 800
+  },
+  {
+    'refCode': '_AIPHONE13PRO',
+    'manufacturer_id': 'US0378331005',
+    'model': 'Apple IPHONE 13 PRO',
     'cat': 'smartphone',
     'price': 800
   }
